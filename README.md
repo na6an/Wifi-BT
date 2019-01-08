@@ -10,5 +10,13 @@ Out of various types of firmware products, I wanted to start with firmware for w
 
 ## Hardware Kit
 There are various dev kits made by Cypress. Cypress dev kits have product code starting with "CY8CKIT."  
-The kit I selected was PSoC® 6 WiFi-BT Pioneer Kit (CY8CKIT-062-WIFI-BT). I'm not 100% sure how they name the product number, but it appears the middle number is its PSoC version number as PSoC 6 is their latest product. The first Cypress training material I found was actually using PSoC only for bluetooth (CY8CKIT-062-BLE), but I thought it'd be better to leave an option open for wifi as well.  
+~~The kit I selected was PSoC® 6 WiFi-BT Pioneer Kit (CY8CKIT-062-WIFI-BT). I'm not 100% sure how they name the product number, but it appears the middle number is its PSoC version number as PSoC 6 is their latest product. The first Cypress training material I found was actually using PSoC only for bluetooth (CY8CKIT-062-BLE), but I thought it'd be better to leave an option open for wifi as well.  
+
+I happen to have an error that preventing programming the tutorial firmware to the device, which bricked the device.  
+Contacted Cypress regarding the issue but no luck finding the solution, still have no clue what might have caused the issue.    
+Ended up return the Wifi-BT kit and bought the original BLE kit instead.
+
+## Tutorial
+Tutorial videos are available at:  
+http://www.cypress.com/training/psoc-video-tutorial-series-how-create-android-apps-interact-cypress-ble  
 
