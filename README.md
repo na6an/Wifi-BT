@@ -20,3 +20,8 @@ Ended up return the Wifi-BT kit and bought the original BLE kit instead.
 Tutorial videos are available at:  
 http://www.cypress.com/training/psoc-video-tutorial-series-how-create-android-apps-interact-cypress-ble  
 
+One of problems of this tutorial is it's based on PSoC 4 instead of PSoC 6.  
+
+Also, a several upgrades were made on the PSoC Creator IDE since the tutorial was uploaded.  
+
+PSoC Creator IDE is an user friendly tool that can generate base code by programmer's choice.  
