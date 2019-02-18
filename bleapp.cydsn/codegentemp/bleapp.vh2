@@ -1,0 +1,387 @@
+--
+--	Conversion of bleapp.v to vh2:
+--
+--	Cypress Semiconductor - WARP Version 6.3 IR 41
+--	Wed Feb 13 22:37:59 2019
+--
+
+USE cypress.cypress.all;
+USE cypress.rtlpkg.all;
+ENTITY top_RTL IS
+ATTRIBUTE part_name of top_RTL:TYPE IS "cpsoc3";
+END top_RTL;
+--------------------------------------------------------
+ARCHITECTURE R_T_L OF top_RTL IS
+SIGNAL Net_3 : bit;
+SIGNAL Net_2 : bit;
+SIGNAL Net_1 : bit;
+SIGNAL \ble:Net_1\ : bit;
+SIGNAL one : bit;
+SIGNAL zero : bit;
+SIGNAL \capsense:tmpFB_0__Cmod_net_0\ : bit;
+TERMINAL \capsense:Net_314\ : bit;
+SIGNAL \capsense:tmpIO_0__Cmod_net_0\ : bit;
+TERMINAL \capsense:tmpSIOVREF__Cmod_net_0\ : bit;
+SIGNAL \capsense:Net_589\ : bit;
+TERMINAL \capsense:Net_606\ : bit;
+SIGNAL \capsense:Net_45\ : bit;
+SIGNAL \capsense:Net_46\ : bit;
+SIGNAL \capsense:Net_47\ : bit;
+SIGNAL \capsense:Net_48\ : bit;
+TERMINAL \capsense:Net_866\ : bit;
+SIGNAL \capsense:Net_636\ : bit;
+SIGNAL \capsense:Net_637\ : bit;
+SIGNAL \capsense:Net_638\ : bit;
+SIGNAL \capsense:Net_639\ : bit;
+SIGNAL \capsense:Net_1423\ : bit;
+TERMINAL \capsense:Net_34\ : bit;
+SIGNAL \capsense:Net_44\ : bit;
+TERMINAL \capsense:dedicated_io_bus_0\ : bit;
+SIGNAL \capsense:Net_608\ : bit;
+SIGNAL \capsense:Net_610\ : bit;
+SIGNAL \capsense:Net_611\ : bit;
+TERMINAL \capsense:Net_847_4\ : bit;
+TERMINAL \capsense:Net_847_3\ : bit;
+TERMINAL \capsense:Net_847_2\ : bit;
+TERMINAL \capsense:Net_847_1\ : bit;
+TERMINAL \capsense:Net_847_0\ : bit;
+TERMINAL \capsense:Net_13\ : bit;
+TERMINAL \capsense:Net_848\ : bit;
+TERMINAL \capsense:Net_273\ : bit;
+TERMINAL \capsense:Net_324\ : bit;
+TERMINAL \capsense:Net_846\ : bit;
+TERMINAL \capsense:Net_615\ : bit;
+TERMINAL \capsense:Net_82\ : bit;
+TERMINAL \capsense:Net_616\ : bit;
+TERMINAL \capsense:dedicated_io_bus_1\ : bit;
+TERMINAL \capsense:Net_850\ : bit;
+SIGNAL \capsense:Net_813\ : bit;
+SIGNAL \capsense:Net_814\ : bit;
+SIGNAL \capsense:Net_815\ : bit;
+SIGNAL \capsense:Net_845\ : bit;
+SIGNAL \capsense:Net_817\ : bit;
+SIGNAL \capsense:Net_818\ : bit;
+SIGNAL \capsense:Net_819\ : bit;
+SIGNAL \capsense:Net_828_15\ : bit;
+SIGNAL \capsense:Net_828_14\ : bit;
+SIGNAL \capsense:Net_828_13\ : bit;
+SIGNAL \capsense:Net_828_12\ : bit;
+SIGNAL \capsense:Net_828_11\ : bit;
+SIGNAL \capsense:Net_828_10\ : bit;
+SIGNAL \capsense:Net_828_9\ : bit;
+SIGNAL \capsense:Net_828_8\ : bit;
+SIGNAL \capsense:Net_828_7\ : bit;
+SIGNAL \capsense:Net_828_6\ : bit;
+SIGNAL \capsense:Net_828_5\ : bit;
+SIGNAL \capsense:Net_828_4\ : bit;
+SIGNAL \capsense:Net_828_3\ : bit;
+SIGNAL \capsense:Net_828_2\ : bit;
+SIGNAL \capsense:Net_828_1\ : bit;
+SIGNAL \capsense:Net_828_0\ : bit;
+SIGNAL \capsense:Net_851\ : bit;
+SIGNAL \capsense:Net_821\ : bit;
+SIGNAL \capsense:Net_822\ : bit;
+SIGNAL \capsense:Net_849\ : bit;
+SIGNAL \capsense:tmpFB_4__Sns_net_4\ : bit;
+SIGNAL \capsense:tmpFB_4__Sns_net_3\ : bit;
+SIGNAL \capsense:tmpFB_4__Sns_net_2\ : bit;
+SIGNAL \capsense:tmpFB_4__Sns_net_1\ : bit;
+SIGNAL \capsense:tmpFB_4__Sns_net_0\ : bit;
+SIGNAL \capsense:tmpIO_4__Sns_net_4\ : bit;
+SIGNAL \capsense:tmpIO_4__Sns_net_3\ : bit;
+SIGNAL \capsense:tmpIO_4__Sns_net_2\ : bit;
+SIGNAL \capsense:tmpIO_4__Sns_net_1\ : bit;
+SIGNAL \capsense:tmpIO_4__Sns_net_0\ : bit;
+TERMINAL \capsense:tmpSIOVREF__Sns_net_0\ : bit;
+SIGNAL tmpFB_0__red_net_0 : bit;
+SIGNAL tmpIO_0__red_net_0 : bit;
+TERMINAL tmpSIOVREF__red_net_0 : bit;
+SIGNAL Net_19 : bit;
+SIGNAL tmpFB_0__blue_net_0 : bit;
+SIGNAL tmpIO_0__blue_net_0 : bit;
+TERMINAL tmpSIOVREF__blue_net_0 : bit;
+SIGNAL Net_15 : bit;
+SIGNAL \pwm:swap\ : bit;
+SIGNAL \pwm:count\ : bit;
+SIGNAL \pwm:reload\ : bit;
+SIGNAL \pwm:kill\ : bit;
+SIGNAL \pwm:start\ : bit;
+SIGNAL Net_13 : bit;
+SIGNAL Net_14 : bit;
+SIGNAL Net_12 : bit;
+SIGNAL Net_17 : bit;
+SIGNAL Net_16 : bit;
+SIGNAL Net_11 : bit;
+BEGIN
+
+one <=  ('1') ;
+
+zero <=  ('0') ;
+
+Net_19 <= (not Net_16);
+
+\ble:cy_mxs40_ble\:cy_mxs40_ble_v1_0
+	GENERIC MAP(cy_registers=>"",
+		low_power=>'1')
+	PORT MAP(ext_pa_lna_chip_en_out=>Net_3,
+		ext_lna_rx_ctl_out=>Net_2,
+		ext_pa_tx_ctl_out=>Net_1,
+		interrupt=>\ble:Net_1\);
+\ble:bless_isr\:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'1',
+		int_type=>"10")
+	PORT MAP(int_signal=>\ble:Net_1\);
+\capsense:Cmod\:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"88d0c20d-6b04-40fe-abbf-0cccf5a97268/4db2e9d3-9f70-4f4e-a919-7eefada41863",
+		drive_mode=>"0",
+		ibuf_enabled=>"0",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"Cmod",
+		pin_mode=>"A",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(\capsense:tmpFB_0__Cmod_net_0\),
+		analog=>\capsense:Net_314\,
+		io=>(\capsense:tmpIO_0__Cmod_net_0\),
+		annotation=>(open),
+		siovref=>(\capsense:tmpSIOVREF__Cmod_net_0\));
+\capsense:IDACMod\:cy_mxs40_csidac_v1_0
+	GENERIC MAP(cy_registers=>"",
+		leg3_needed=>'0')
+	PORT MAP(iout=>\capsense:Net_606\,
+		dsi_idac_leg1_en=>zero,
+		dsi_idac_leg2_en=>zero,
+		dsi_idac_leg3_en=>zero,
+		dsi_idac_pol=>zero);
+\capsense:IDACComp\:cy_mxs40_csidac_v1_0
+	GENERIC MAP(cy_registers=>"",
+		leg3_needed=>'1')
+	PORT MAP(iout=>\capsense:Net_866\,
+		dsi_idac_leg1_en=>zero,
+		dsi_idac_leg2_en=>zero,
+		dsi_idac_leg3_en=>zero,
+		dsi_idac_pol=>zero);
+\capsense:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\capsense:Net_34\);
+\capsense:cy_analog_virtualmux_1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\capsense:Net_314\,
+		signal2=>\capsense:dedicated_io_bus_0\);
+\capsense:CSD\:cy_mxs40_csd_v1_0
+	GENERIC MAP(cy_registers=>"",
+		sensors_count=>5,
+		rx_count=>1,
+		tx_count=>1,
+		shield_count=>1,
+		adc_channel_count=>1,
+		dedicated_io_count=>2,
+		is_cmod_charge=>'1',
+		is_capsense=>'1',
+		sense_as_shield=>'0',
+		shield_as_sense=>'0')
+	PORT MAP(sense=>(\capsense:Net_847_4\, \capsense:Net_847_3\, \capsense:Net_847_2\, \capsense:Net_847_1\,
+			\capsense:Net_847_0\),
+		rx=>\capsense:Net_13\,
+		tx=>\capsense:Net_848\,
+		shield=>\capsense:Net_273\,
+		adc_channel=>\capsense:Net_324\,
+		amuxa=>\capsense:Net_606\,
+		amuxb=>\capsense:Net_846\,
+		csh=>\capsense:Net_615\,
+		cmod=>\capsense:Net_82\,
+		shield_pad=>\capsense:Net_616\,
+		dedicated_io=>(\capsense:dedicated_io_bus_1\, \capsense:dedicated_io_bus_0\),
+		vref_ext=>\capsense:Net_34\,
+		vref_pass=>\capsense:Net_850\,
+		dsi_sense_out=>\capsense:Net_813\,
+		dsi_sample_out=>\capsense:Net_814\,
+		dsi_sense_in=>zero,
+		dsi_sample_in=>zero,
+		dsi_csh_tank=>\capsense:Net_815\,
+		dsi_cmod=>\capsense:Net_845\,
+		dsi_hscmp=>\capsense:Net_817\,
+		dsi_start=>zero,
+		dsi_sampling=>\capsense:Net_818\,
+		dsi_adc_on=>\capsense:Net_819\,
+		dsi_count=>(\capsense:Net_828_15\, \capsense:Net_828_14\, \capsense:Net_828_13\, \capsense:Net_828_12\,
+			\capsense:Net_828_11\, \capsense:Net_828_10\, \capsense:Net_828_9\, \capsense:Net_828_8\,
+			\capsense:Net_828_7\, \capsense:Net_828_6\, \capsense:Net_828_5\, \capsense:Net_828_4\,
+			\capsense:Net_828_3\, \capsense:Net_828_2\, \capsense:Net_828_1\, \capsense:Net_828_0\),
+		dsi_count_val_sel=>zero,
+		csd_tx=>\capsense:Net_821\,
+		csd_tx_n=>\capsense:Net_822\,
+		clock=>\capsense:Net_611\,
+		interrupt=>\capsense:Net_849\,
+		tr_adc_done=>open);
+\capsense:ModClk\:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"88d0c20d-6b04-40fe-abbf-0cccf5a97268/8273f0d6-caef-4cc7-ad3c-09656b78e2cb",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>255,
+		period=>"0",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>\capsense:Net_611\,
+		dig_domain_out=>open);
+\capsense:Sns\:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>5,
+		sio_grp_cnt=>0,
+		id=>"88d0c20d-6b04-40fe-abbf-0cccf5a97268/0113321b-4a37-46f6-8407-2f8646c68756",
+		drive_mode=>"0,0,0,0,0",
+		ibuf_enabled=>"0,0,0,0,0",
+		init_dr_st=>"1,1,1,1,1",
+		input_sync=>"0,0,0,0,0",
+		intr_mode=>"0,0,0,0,0",
+		io_voltage=>",,,,",
+		output_conn=>"0,0,0,0,0",
+		oe_conn=>"0,0,0,0,0",
+		output_sync=>"0,0,0,0,0",
+		oe_sync=>"0,0,0,0,0",
+		drive_strength=>"0,0,0,0,0",
+		max_frequency=>"100,100,100,100,100",
+		output_current_cap=>"8,8,8,8,8",
+		i2c_mode=>"0,0,0,0,0",
+		pin_aliases=>"LinearSlider0_Sns0,LinearSlider0_Sns1,LinearSlider0_Sns2,LinearSlider0_Sns3,LinearSlider0_Sns4",
+		pin_mode=>"A,A,A,A,A",
+		slew_rate=>"0,0,0,0,0",
+		vtrip=>"0,0,0,0,0",
+		use_annotation=>"0,0,0,0,0",
+		hotswap_needed=>"0,0,0,0,0")
+	PORT MAP(oe=>(one, one, one, one,
+			one),
+		y=>(zero, zero, zero, zero,
+			zero),
+		fb=>(\capsense:tmpFB_4__Sns_net_4\, \capsense:tmpFB_4__Sns_net_3\, \capsense:tmpFB_4__Sns_net_2\, \capsense:tmpFB_4__Sns_net_1\,
+			\capsense:tmpFB_4__Sns_net_0\),
+		analog=>(\capsense:Net_847_4\, \capsense:Net_847_3\, \capsense:Net_847_2\, \capsense:Net_847_1\,
+			\capsense:Net_847_0\),
+		io=>(\capsense:tmpIO_4__Sns_net_4\, \capsense:tmpIO_4__Sns_net_3\, \capsense:tmpIO_4__Sns_net_2\, \capsense:tmpIO_4__Sns_net_1\,
+			\capsense:tmpIO_4__Sns_net_0\),
+		annotation=>(open, open, open, open,
+			open),
+		siovref=>(\capsense:tmpSIOVREF__Sns_net_0\));
+\capsense:ISR\:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>\capsense:Net_849\);
+\capsense:cy_analog_noconnect_3\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\capsense:Net_850\);
+\capsense:cy_analog_virtualmux_2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\capsense:Net_866\,
+		signal2=>\capsense:Net_606\);
+red:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"a61270bc-07ec-447d-ac9e-34cfe85c30e9",
+		drive_mode=>"6",
+		ibuf_enabled=>"0",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"O",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__red_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__red_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__red_net_0));
+blue:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"fbbb8d9c-a649-4b89-b716-d01d3c1b9e2a",
+		drive_mode=>"6",
+		ibuf_enabled=>"0",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"1",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"O",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>Net_19,
+		fb=>(tmpFB_0__blue_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__blue_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__blue_net_0));
+\pwm:TCPWM\:cy_mxs40_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>16,
+		exact_width=>'0')
+	PORT MAP(clock=>Net_15,
+		capture=>zero,
+		count=>one,
+		reload=>zero,
+		stop=>zero,
+		start=>zero,
+		tr_underflow=>Net_13,
+		tr_compare_match=>Net_14,
+		tr_overflow=>Net_12,
+		line_compl=>Net_17,
+		line=>Net_16,
+		interrupt=>Net_11);
+Clock_1:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"3ea2e4b3-2344-4b6c-899a-fc9ae710ed01",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>0,
+		period=>"1000000000000",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_15,
+		dig_domain_out=>open);
+
+END R_T_L;

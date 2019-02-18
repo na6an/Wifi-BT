@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<fileSet version="1" anchorPath="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp" xsi:schemaLocation="http://cypress.com/xsd/cypathdictionary cypathdictionary.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://cypress.com/xsd/cypathdictionary">
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cyfitter_cfg.h" value="HEADER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cyfitter_sysint_cfg.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cyfitter_sysint_cfg.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Pins and Interrupts" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cyfitter_cfg.c" value="SOURCE_C;CortexM0p;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cymetadata.c" value="SOURCE_C;CortexM0p,CortexM4;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cydevice_trm.h" value="HEADER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cydevicegnu_trm.inc" value="HEADER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cydevicerv_trm.inc" value="HEADER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cydeviceiar_trm.inc" value="HEADER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cyfitter_gpio.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cyfitter_sysint.h" value="HEADER;;;;;Pins and Interrupts" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\BLE.h" value="HEADER;;;;;ble" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\BLE.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ble" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\BLE_config.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ble" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\BLE_config.h" value="HEADER;;;;;ble" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Control.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Processing.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Structure.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Tuner.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Filter.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Sensing.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Control.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Filter.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Processing.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Sensing.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Structure.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Tuner.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Configuration.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_INT.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_SensingCSD_LL.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_SensingCSD_LL.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_RegisterMap.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Centroid_LL.c" value="SOURCE_C;CortexM0p,CortexM4;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_Centroid_LL.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_SmartSense_LL.h" value="HEADER;;;;;capsense" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\pwm.c" value="SOURCE_C;CortexM0p,CortexM4;;;;pwm" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\pwm.h" value="HEADER;;;;;pwm" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\capsense_ModClk.h" value="HEADER;;;;;capsense_ModClk" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />
+  <file name="C:\Users\jbyun\Documents\PSoC Creator\Workspace01\bleapp.cydsn\codegentemp\cycodeshareimport.scat" value="OTHER;;;;;" />
+</fileSet>

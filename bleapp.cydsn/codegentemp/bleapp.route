@@ -1,0 +1,66 @@
+net CPUSS_swj_swclk_tclk
+	term   ":ioport6:pin7.fb"
+	switch ":ioport6:pin7.fb==>:ioport6:smartio_mux_out7.direct_in"
+	switch ":ioport6:smartio_mux_out7.smartio_mux_out==>:ioport6:hsiomIn7.hsiomIn7"
+	switch ":ioport6:hsiomIn7.fixedOut7_DPSLP_5==>:CPUSS[0]swj_swclk_tclk_input_permute.ioport6_fixedOut7_DPSLP_5"
+	switch ":CPUSS[0]swj_swclk_tclk_input_permute.CPUSS[0]swj_swclk_tclk==>:CPUSScontainer:CPUSS[0].swj_swclk_tclk"
+	term   ":CPUSScontainer:CPUSS[0].swj_swclk_tclk"
+end CPUSS_swj_swclk_tclk
+net CPUSS_swj_swdio_tms
+	term   ":ioport6:pin6.fb"
+	switch ":ioport6:pin6.fb==>:ioport6:smartio_mux_out6.direct_in"
+	switch ":ioport6:smartio_mux_out6.smartio_mux_out==>:ioport6:hsiomIn6.hsiomIn6"
+	switch ":ioport6:hsiomIn6.fixedOut6_DPSLP_5==>:CPUSS[0]swj_swdio_tms_input_permute.ioport6_fixedOut6_DPSLP_5"
+	switch ":CPUSS[0]swj_swdio_tms_input_permute.CPUSS[0]swj_swdio_tms==>:CPUSScontainer:CPUSS[0].swj_swdio_tms"
+	term   ":CPUSScontainer:CPUSS[0].swj_swdio_tms"
+end CPUSS_swj_swdio_tms
+net Net_15_ff11
+	term   ":Clockcontainer:Clock[0].ff_div_11"
+	switch ":Clockcontainer:Clock[0].ff_div_11==>:Clockcontainer:ff_permute.ff_div_11"
+	switch ":Clockcontainer:ff_permute.Clock[0]ff_div_19==>:TCPWMcontainer:TCPWM[0].clock"
+	term   ":TCPWMcontainer:TCPWM[0].clock"
+end Net_15_ff11
+net Net_16
+	term   ":TCPWMcontainer:TCPWM[0].line"
+	switch ":TCPWMcontainer:TCPWM[0].line==>:UDB_Array:DSI_new0:LHO_Sel62.3"
+	switch ":UDB_Array:DSI_new0:LHO_Sel62.lho62==>:UDB_Array:DSI_new0:LVO_Sel7.5"
+	switch ":UDB_Array:DSI_new0:LVO_Sel7.vo7==>:UDB_Array:UDBroute0:TOP_V_BOT7.0"
+	switch ":UDB_Array:UDBroute0:TOP_V_BOT7.vi7==>:UDB_Array:UDBroute0:LVO_Sel7.15"
+	switch ":UDB_Array:UDBroute0:LVO_Sel7.vo7==>:UDB_Array:UDBroute0:LHO_Sel57.13"
+	switch ":UDB_Array:UDBroute0:LHO_Sel57.lho57==>:UDB_Array:UDBroute1:LHO_Sel57.15"
+	switch ":UDB_Array:UDBroute1:LHO_Sel57.lho57==>:UDB_Array:UDBroute2:LHO_Sel57.15"
+	switch ":UDB_Array:UDBroute2:LHO_Sel57.lho57==>:UDB_Array:UDBroute2:TUI_Sel6.5"
+	switch ":UDB_Array:UDBroute2:TUI_Sel6.tui6==>:UDB_Array:udb@[UDB=(0,3)]:PLD[0]:permute_input.6"
+	switch ":UDB_Array:udb@[UDB=(0,3)]:PLD[0]:permute_input.mc[0]_main_0==>:UDB_Array:udb@[UDB=(0,3)]:PLD[0]:mc[0].main_0"
+	term   ":UDB_Array:udb@[UDB=(0,3)]:PLD[0]:mc[0].main_0"
+end Net_16
+net Net_19
+	term   ":UDB_Array:udb@[UDB=(0,3)]:PLD[0]:mc[0].q"
+	switch ":UDB_Array:udb@[UDB=(0,3)]:PLD[0]:mc[0].q==>:UDB_Array:udb@[UDB=(0,3)]:PLD[0]:permute_output[3].0"
+	switch ":UDB_Array:udb@[UDB=(0,3)]:PLD[0]:permute_output[3].output_3==>:UDB_Array:UDBroute2:LHO_Sel95.2"
+	switch ":UDB_Array:UDBroute2:LHO_Sel95.lho95==>:UDB_Array:UDBroute2:LVO_Sel9.7"
+	switch ":UDB_Array:UDBroute2:LVO_Sel9.vo9==>:UDB_Array:DSI_new8:LVO_Sel9.15"
+	switch ":UDB_Array:DSI_new8:LVO_Sel9.vo9==>:UDB_Array:DSI_new8:LHO_Sel37.13"
+	switch ":UDB_Array:DSI_new8:LHO_Sel37.lho37==>:UDB_Array:DSI_new8:DOT_Sel2.18"
+	switch ":UDB_Array:DSI_new8:DOT_Sel2.ot2==>:UDB_Array:PortAdapter8:inputMux1.pinIn_2"
+	switch ":UDB_Array:PortAdapter8:inputMux1.paOut_1==>:ioport11:hsiomOut1.fixedIn1_DSI_GPIO"
+	switch ":ioport11:hsiomOut1.hsiomOut1==>:ioport11:smartio_mux_in1.direct_out"
+	switch ":ioport11:smartio_mux_in1.smartio_mux_in==>:ioport11:pin1.pin_input"
+	term   ":ioport11:pin1.pin_input"
+end Net_19
+net \ble:Net_1\
+	term   ":BLEcontainer:BLE[0].interrupt"
+	switch ":BLEcontainer:BLE[0].interrupt==>:intc_0:interrupt24.interrupt"
+	term   ":intc_0:interrupt24.interrupt"
+end \ble:Net_1\
+net \capsense:Net_611_ff43\
+	term   ":Clockcontainer:Clock[0].ff_div_43"
+	switch ":Clockcontainer:Clock[0].ff_div_43==>:Clockcontainer:ff_permute.ff_div_43"
+	switch ":Clockcontainer:ff_permute.Clock[0]ff_div_51==>:CSDcontainer:CSD[0].clk"
+	term   ":CSDcontainer:CSD[0].clk"
+end \capsense:Net_611_ff43\
+net \capsense:Net_849\
+	term   ":CSDcontainer:CSD[0].irq"
+	switch ":CSDcontainer:CSD[0].irq==>:intc_0:interrupt49.interrupt"
+	term   ":intc_0:interrupt49.interrupt"
+end \capsense:Net_849\
